@@ -22,23 +22,23 @@ int _printf(const char * const format, ...)
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 	return (-1);
 	Here:
-	while (format[j] != '\0')
-	{
-	k = 13;
-	while (k >= 0)
-	{
-	if (p[k].ch[0] == format[j] && p[k].ch[1] == format[j + 1])
-	{
-	len += p[j].function(args);
-	j = j + 2;
-	goto Here;
-	}
+		while (format[j] != '\0')
+		{
+		k = 13;
+		while (k >= 0)
+		{
+		if (p[k].ch[0] == format[j] && p[k].ch[1] == format[j + 1])
+		{
+		len += p[j].func(args);
+		j = j + 2;
+		goto Here;
+		}
 		k--;
-	}
+		}
 		_putchar(format[j]);
 		len++;
 		j++;
-	}
+		}
 		va_end(args);
 		return (len);
 }
