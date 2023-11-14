@@ -22,7 +22,6 @@ int print_char(va_list val);
 int _strlenc(const char *str);
 int _strlen(char *str);
 int print_integer(va_list args);
-int print_dec(va_list args);
 int print_37(void);
 int print_binary(va_list val);
 int print_uns(va_list args);
@@ -32,5 +31,9 @@ int print_HEX(unsigned int num);
 int _putchar(char c);
 int _printf(const char *format, ...);
 int _printf(const char * const format, ...);
+int print_revs(va_list args);
+int print_rot13(char *str);
+int print_my_string(va_list val);
+int print_pointer(va_list val);
 
 #endif

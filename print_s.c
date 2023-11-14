@@ -8,6 +8,7 @@ int print_string(va_list val)
 {
 	char *str;
 	int j, len;
+
 	str = va_arg(val, char *);
 	if (str == NULL)
 	{

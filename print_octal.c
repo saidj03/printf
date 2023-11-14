@@ -11,7 +11,7 @@ int print_octal(va_list val)
 	int count = 0;
 	unsigned int num = va_arg(val, unsigned int);
 	unsigned int temp = num;
-	
+
 	while (num / 8 != 0)
 	{
 	num /= 8;
